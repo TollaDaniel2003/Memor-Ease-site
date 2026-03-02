@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memor’Ease - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Memor’Ease</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarif.html">Tarifs</a>
+        <a href="confiance.html">Confiance</a>
+        <a href="partenaire.html">Partenaires</a>
+        <a href="contact.html">Contact</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="connexion.html">Connexion</a>
+    </nav>
+</header>
+
+<main class="section">
+    <h2>Nous contacter</h2>
+    <p>Vous avez des questions sur Memor’Ease, besoin d’aide sur un dossier ou envie de devenir partenaire ? Utilisez ce formulaire ou contactez‑nous directement par e‑mail.</p>
+
+    <div class="form-wrapper">
+        <form>
+            <div class="form-inline">
+                <div>
+                    <label for="nom">Nom et prénom</label>
+                    <input type="text" id="nom" required>
+                </div>
+                <div>
+                    <label for="email">Adresse e‑mail</label>
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="sujet">Sujet</label>
+                <select id="sujet" required>
+                    <option value="">Choisissez...</option>
+                    <option value="infos">Informations sur le service</option>
+                    <option value="dossier">Suivi de dossier</option>
+                    <option value="partenariat">Devenir partenaire</option>
+                    <option value="autre">Autre demande</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+
+    <p class="info-text" style="margin-top:1rem;">
+        Vous pouvez aussi nous écrire directement à : <a href="mailto:contact@Memor’Ease.Fr">contact@Memor’Ease.Fr</a>
+    </p>
+</main>
+
+<footer>
+    <p>Contact : <a href="mailto:contact@Memor’Ease.Fr">contact@Memor’Ease.Fr</a> | Rouen, France</p>
+    <p>&copy; <span id="year"></span> Memor’Ease. Tous droits réservés.</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
